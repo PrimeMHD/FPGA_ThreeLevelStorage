@@ -178,11 +178,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  **写操作的时序：**
 
-<img src="README.assets/image-20191201212110356.png" alt="image-20191201212110356" width="800" />
+<img src="README.assets/image-20191201212110356.png" alt="image-20191201212110356" width="500" />
 
  **读操作的时序：**
 
-<img src="README.assets/image-20191201212120262.png" alt="image-20191201212120262"  width="800" />
+<img src="README.assets/image-20191201212120262.png" alt="image-20191201212120262"  width="500" />
 
  **非工作状态：**
 
@@ -200,7 +200,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  Cache块是通过一个Distributed Memory实现的。容量为512个字，和前面对Cache的设计保持一致，4个块每个块128个字，4×128=512。
 
-![image-20191201212219606](README.assets/image-20191201212219606.png)
+<img src="README.assets/image-20191201212219606.png" alt="image-20191201212219606" width="550" />
 
  Cache是可读可写的，所以这里设置Memory Type为Single Port RAM。
 
@@ -273,11 +273,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 ### 4.1. 从U盘下板
 
-<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="600" />
+<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="500" />
 
  使用移动电源供电。比特流在u盘中，应用程序在SD卡中。
 
-<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="600" />
+<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="500" />
 
  黄色的BUSY灯常亮，说明正在下板。
 
@@ -287,11 +287,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  LED[2]表示存储子系统正忙，可能是正在启动，也可能时因为发生Cache块的装入、替换。除了最开始启动，其他时间一般忙的时间非常短暂，LED[2]只会闪一下。
 
-<img src="README.assets/image-20191201214103842.png" alt="image-20191201214103842" width="700" />
+<img src="README.assets/image-20191201214103842.png" alt="image-20191201214103842" width="400" />
 
  上图只有LED[2]亮，这是系统刚通电，存储子系统未就绪。
 
-<img src="README.assets/image-20191201214111646.png" alt="image-20191201214111646" width="700"/>
+<img src="README.assets/image-20191201214111646.png" alt="image-20191201214111646" width="400"/>
 
  上图LED[0]、LED[1]亮，表示系统就绪并且从存储子系统中读出了数据。
 
