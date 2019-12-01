@@ -49,7 +49,7 @@
 
 ### 1.4. 实验环境
 
-<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654" style="zoom: 25%" />
+<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654"  width="300" />
 
  **硬件环境：**
 
@@ -59,7 +59,7 @@
 
  板上的100 MHz的时钟接入此系统，并通过分频器给每个部件合适的频率。
 
-![image-20191201211103540](README.assets/image-20191201211103540.png)
+<img src="README.assets/image-20191201211103540.png" alt="image-20191201211103540" width="1100" />
 
  **软件环境：**
 
@@ -76,9 +76,9 @@
 
 ### 2.1. 系统设计总体模块图
 
-<img src="README.assets/image-20191201211400475.png" alt="image-20191201211400475" style="zoom:80%;" />
+<img src="README.assets/image-20191201211400475.png" alt="image-20191201211400475"  width="560" />
 
-<img src="README.assets/image-20191201211411324.png" alt="image-20191201211411324" style="zoom:80%;" />
+<img src="README.assets/image-20191201211411324.png" alt="image-20191201211411324"  width="900" />
 
 ### 2.2. 三级存储子系统设计
 
@@ -94,7 +94,7 @@
 
  其余的高位则作为标识位。 Cache工作的基本原理如图所示。
 
-<img src="README.assets/image-20191201211521722.png" alt="image-20191201211521722" style="zoom:120%;" />
+<img src="README.assets/image-20191201211521722.png" alt="image-20191201211521722"  width="300" />
 
 (2) Cache映射与替换
 
@@ -178,11 +178,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  **写操作的时序：**
 
-![image-20191201212110356](README.assets/image-20191201212110356.png)
+<img src="README.assets/image-20191201212110356.png" alt="image-20191201212110356" width="800" />
 
  **读操作的时序：**
 
-![image-20191201212120262](README.assets/image-20191201212120262.png)
+<img src="README.assets/image-20191201212120262.png" alt="image-20191201212120262"  width="800" />
 
  **非工作状态：**
 
@@ -208,9 +208,9 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  SD卡为移动设备提供了安全的，大容量存储解决方法。它本身可以通过两种总线模式进行数据传输，一种是称为SD BUS的4位串行数据模式，另一种就是本次实验采用的4线SPI Bus模式。
 
-<img src="README.assets/image-20191201212250206.png" alt="image-20191201212250206" style="zoom: 80%;" />
+<img src="README.assets/image-20191201212250206.png" alt="image-20191201212250206" width="300"  />
 
-![image-20191201212946275](README.assets/image-20191201212946275.png)
+<img src="README.assets/image-20191201212946275.png" alt="image-20191201212946275" width="500" />
 
 -  **初始化操作**
 
@@ -273,11 +273,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 ### 4.1. 从U盘下板
 
-![image-20191201214041691](README.assets/image-20191201214041691.png)
+<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="900" />
 
  使用移动电源供电。比特流在u盘中，应用程序在SD卡中。
 
-![image-20191201214053039](README.assets/image-20191201214053039.png)
+<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="900" />
 
  黄色的BUSY灯常亮，说明正在下板。
 
@@ -287,11 +287,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  LED[2]表示存储子系统正忙，可能是正在启动，也可能时因为发生Cache块的装入、替换。除了最开始启动，其他时间一般忙的时间非常短暂，LED[2]只会闪一下。
 
-<img src="README.assets/image-20191201214103842.png" alt="image-20191201214103842" style="zoom: 60%;" />
+<img src="README.assets/image-20191201214103842.png" alt="image-20191201214103842" width="700" />
 
  上图只有LED[2]亮，这是系统刚通电，存储子系统未就绪。
 
-<img src="README.assets/image-20191201214111646.png" alt="image-20191201214111646" style="zoom: 50%;" />
+<img src="README.assets/image-20191201214111646.png" alt="image-20191201214111646" width="700"/>
 
  上图LED[0]、LED[1]亮，表示系统就绪并且从存储子系统中读出了数据。
 
@@ -337,7 +337,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  下板结果：
 
-<img src="README.assets/image-20191201214455511.png" alt="image-20191201214455511" style="zoom:50%;" />
+<img src="README.assets/image-20191201214455511.png" alt="image-20191201214455511" width="900" />
 
  下板结果为1~F依次从右边流出，循环往复，符和预期结果，中途替换SD卡成功。
 
