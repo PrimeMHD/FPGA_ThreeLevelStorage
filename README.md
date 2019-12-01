@@ -43,13 +43,13 @@
 
 ### 1.3. 总体框架
 
-<img src="README.assets/image-20191201210808698.png" width="300" alt="image-20191201210808698" />
+<img src="README.assets/image-20191201210808698.png" width="300" alt="image-20191201210808698"/>
 
  这是三级存储系统的总框图，是一个较为抽象的概念图，具体实现则需要结合硬件实验环境选取合适的部件。
 
 ### 1.4. 实验环境
 
-<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654" style="zoom: 25%;" />
+<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654" style="zoom: 25%" />
 
  **硬件环境：**
 
