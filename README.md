@@ -78,7 +78,7 @@
 
 <img src="README.assets/image-20191201211400475.png" alt="image-20191201211400475"  width="560" />
 
-<img src="README.assets/image-20191201211411324.png" alt="image-20191201211411324"  width="900" />
+<img src="README.assets/image-20191201211411324.png" alt="image-20191201211411324"  width="500" />
 
 ### 2.2. 三级存储子系统设计
 
@@ -208,9 +208,9 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  SD卡为移动设备提供了安全的，大容量存储解决方法。它本身可以通过两种总线模式进行数据传输，一种是称为SD BUS的4位串行数据模式，另一种就是本次实验采用的4线SPI Bus模式。
 
-<img src="README.assets/image-20191201212250206.png" alt="image-20191201212250206" width="300"  />
+<img src="README.assets/image-20191201212250206.png" alt="image-20191201212250206" width="400"  />
 
-<img src="README.assets/image-20191201212946275.png" alt="image-20191201212946275" width="500" />
+<img src="README.assets/image-20191201212946275.png" alt="image-20191201212946275" width="600" />
 
 -  **初始化操作**
 
@@ -273,11 +273,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 ### 4.1. 从U盘下板
 
-<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="900" />
+<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="600" />
 
  使用移动电源供电。比特流在u盘中，应用程序在SD卡中。
 
-<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="900" />
+<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="600" />
 
  黄色的BUSY灯常亮，说明正在下板。
 
@@ -337,7 +337,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  下板结果：
 
-<img src="README.assets/image-20191201214455511.png" alt="image-20191201214455511" width="900" />
+<img src="README.assets/image-20191201214455511.png" alt="image-20191201214455511" width="500" />
 
  下板结果为1~F依次从右边流出，循环往复，符和预期结果，中途替换SD卡成功。
 
