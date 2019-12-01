@@ -1,0 +1,15 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Tue Dec 25 20:11:06 2018
+| Host         : DESKTOP-HD running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file SOPC_bus_skew_routed.rpt -pb SOPC_bus_skew_routed.pb -rpx SOPC_bus_skew_routed.rpx
+| Design       : SOPC
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.22 2018-03-21
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

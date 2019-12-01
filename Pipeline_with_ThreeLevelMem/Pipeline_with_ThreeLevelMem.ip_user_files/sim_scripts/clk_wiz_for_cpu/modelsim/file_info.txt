@@ -1,0 +1,2 @@
+clk_wiz_for_cpu_sim_netlist.v,verilog,xil_defaultlib,../../../../Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu_sim_netlist.v,incdir="../../../../Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu"
+glbl.v,Verilog,xil_defaultlib,glbl.v

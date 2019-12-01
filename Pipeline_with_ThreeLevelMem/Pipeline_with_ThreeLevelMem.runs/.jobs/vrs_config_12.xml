@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="clk_wiz_for_cpu_synth_1" LaunchDir="D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/clk_wiz_for_cpu_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

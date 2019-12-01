@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="SOPC_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="SOPC_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="317600000000fs"></ZoomStartTime>
+      <ZoomEndTime time="464900000001fs"></ZoomEndTime>
+      <Cursor1Time time="429900000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="232"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="50" />
+   <wvobject fp_name="/SOPC_tb/clk100mhz" type="logic">
+      <obj_property name="ElementShortName">clk100mhz</obj_property>
+      <obj_property name="ObjectShortName">clk100mhz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/btn" type="array">
+      <obj_property name="ElementShortName">btn[3:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/o_seg" type="array">
+      <obj_property name="ElementShortName">o_seg[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_seg[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/o_sel" type="array">
+      <obj_property name="ElementShortName">o_sel[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_sel[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/led" type="array">
+      <obj_property name="ElementShortName">led[15:0]</obj_property>
+      <obj_property name="ObjectShortName">led[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cpu_addr" type="array">
+      <obj_property name="ElementShortName">cpu_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cpu_read_write" type="logic">
+      <obj_property name="ElementShortName">cpu_read_write</obj_property>
+      <obj_property name="ObjectShortName">cpu_read_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cpu_data_toCPU" type="array">
+      <obj_property name="ElementShortName">cpu_data_toCPU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cpu_data_toCPU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/DataBus_busy" type="logic">
+      <obj_property name="ElementShortName">DataBus_busy</obj_property>
+      <obj_property name="ObjectShortName">DataBus_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/DataBus_done" type="logic">
+      <obj_property name="ElementShortName">DataBus_done</obj_property>
+      <obj_property name="ObjectShortName">DataBus_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/cur_state" type="array">
+      <obj_property name="ElementShortName">cur_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">cur_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/cache_status" type="array">
+      <obj_property name="ElementShortName">cache_status[3:0][23:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_status[3:0][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ready_toBoot" type="logic">
+      <obj_property name="ElementShortName">ready_toBoot</obj_property>
+      <obj_property name="ObjectShortName">ready_toBoot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/bootdone" type="logic">
+      <obj_property name="ElementShortName">bootdone</obj_property>
+      <obj_property name="ObjectShortName">bootdone</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_busy" type="logic">
+      <obj_property name="ElementShortName">ddr_busy</obj_property>
+      <obj_property name="ObjectShortName">ddr_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_done" type="logic">
+      <obj_property name="ElementShortName">ddr_done</obj_property>
+      <obj_property name="ObjectShortName">ddr_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_read_write" type="logic">
+      <obj_property name="ElementShortName">ddr_read_write</obj_property>
+      <obj_property name="ObjectShortName">ddr_read_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_data_toDDR" type="array">
+      <obj_property name="ElementShortName">ddr_data_toDDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_data_toDDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_addr_toDDR" type="array">
+      <obj_property name="ElementShortName">ddr_addr_toDDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_addr_toDDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_data_fromDDR" type="array">
+      <obj_property name="ElementShortName">ddr_data_fromDDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_data_fromDDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ready_toBoot" type="logic">
+      <obj_property name="ElementShortName">ready_toBoot</obj_property>
+      <obj_property name="ObjectShortName">ready_toBoot</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/SD_0/counter" type="array">
+      <obj_property name="ElementShortName">counter[16:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/SD_0/sd_mem_ready" type="logic">
+      <obj_property name="ElementShortName">sd_mem_ready</obj_property>
+      <obj_property name="ObjectShortName">sd_mem_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_to_imem_count" type="array">
+      <obj_property name="ElementShortName">ddr_to_imem_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_to_imem_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_boot_block_count" type="array">
+      <obj_property name="ElementShortName">ddr_boot_block_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_boot_block_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_boot_inblock_count" type="array">
+      <obj_property name="ElementShortName">ddr_boot_inblock_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_boot_inblock_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache0/a" type="array">
+      <obj_property name="ElementShortName">a[8:0]</obj_property>
+      <obj_property name="ObjectShortName">a[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache0/d" type="array">
+      <obj_property name="ElementShortName">d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">d[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache0/we" type="logic">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache0/spo" type="array">
+      <obj_property name="ElementShortName">spo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spo[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache_data_fromIMEM" type="array">
+      <obj_property name="ElementShortName">cache_data_fromIMEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_data_fromIMEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache_addr_toIMEM" type="array">
+      <obj_property name="ElementShortName">cache_addr_toIMEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_addr_toIMEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/cache_data_toIMEM" type="array">
+      <obj_property name="ElementShortName">cache_data_toIMEM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cache_data_toIMEM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ack" type="logic">
+      <obj_property name="ElementShortName">ack</obj_property>
+      <obj_property name="ObjectShortName">ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/reg_read_write" type="logic">
+      <obj_property name="ElementShortName">reg_read_write</obj_property>
+      <obj_property name="ObjectShortName">reg_read_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/reg_data_to_DDR" type="array">
+      <obj_property name="ElementShortName">reg_data_to_DDR[127:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_to_DDR[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/data_from_DDR" type="array">
+      <obj_property name="ElementShortName">data_from_DDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_from_DDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/app_cmd" type="array">
+      <obj_property name="ElementShortName">app_cmd[2:0]</obj_property>
+      <obj_property name="ObjectShortName">app_cmd[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/app_en" type="logic">
+      <obj_property name="ElementShortName">app_en</obj_property>
+      <obj_property name="ObjectShortName">app_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/app_rd_data_valid" type="logic">
+      <obj_property name="ElementShortName">app_rd_data_valid</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/app_rd_data" type="array">
+      <obj_property name="ElementShortName">app_rd_data[127:0]</obj_property>
+      <obj_property name="ObjectShortName">app_rd_data[127:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/sd_mem_addr" type="array">
+      <obj_property name="ElementShortName">sd_mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">sd_mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/app_addr" type="array">
+      <obj_property name="ElementShortName">app_addr[26:0]</obj_property>
+      <obj_property name="ObjectShortName">app_addr[26:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/databus_0/ddr_addr_toDDR" type="array">
+      <obj_property name="ElementShortName">ddr_addr_toDDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ddr_addr_toDDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/app_rdy" type="logic">
+      <obj_property name="ElementShortName">app_rdy</obj_property>
+      <obj_property name="ObjectShortName">app_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sccpu/stall" type="array">
+      <obj_property name="ElementShortName">stall[5:0]</obj_property>
+      <obj_property name="ObjectShortName">stall[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sccpu/pc" type="array">
+      <obj_property name="ElementShortName">pc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/SOPC_tb/sopc_0/sccpu/ctrl0/Databus_done" type="logic">
+      <obj_property name="ElementShortName">Databus_done</obj_property>
+      <obj_property name="ObjectShortName">Databus_done</obj_property>
+   </wvobject>
+</wave_config>

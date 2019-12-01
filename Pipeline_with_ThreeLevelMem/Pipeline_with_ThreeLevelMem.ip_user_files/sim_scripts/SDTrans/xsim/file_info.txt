@@ -1,0 +1,2 @@
+SDTrans.v,verilog,xil_defaultlib,../../../../Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/SDTrans/sim/SDTrans.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

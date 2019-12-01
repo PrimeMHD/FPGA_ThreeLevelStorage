@@ -1,0 +1,1702 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 25 20:04:59 2018
+# Process ID: 7032
+# Current directory: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1
+# Command line: vivado.exe -log SOPC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOPC.tcl
+# Log file: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/SOPC.vds
+# Journal file: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SOPC.tcl -notrace
+Command: synth_design -top SOPC -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14316 
+WARNING: [Synth 8-2277] keyword 'unsigned' is not allowed here in this mode of verilog [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/multu.v:4]
+WARNING: [Synth 8-2277] keyword 'unsigned' is not allowed here in this mode of verilog [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/multu.v:5]
+WARNING: [Synth 8-2277] keyword 'unsigned' is not allowed here in this mode of verilog [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/multu.v:6]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 424.004 ; gain = 103.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SOPC' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/SOPC.v:24]
+INFO: [Synth 8-6157] synthesizing module 'cache' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/cache_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'cache' (1#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/cache_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sealedDDR' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sealedDDR.v:2]
+	Parameter readInsistLoop bound to: 256 - type: integer 
+	Parameter writeInsistLoop bound to: 256 - type: integer 
+	Parameter ddr_startLoop bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (2#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_wr' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_wr.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_write_control' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:3]
+	Parameter DQ_WIDTH bound to: 16 - type: integer 
+	Parameter ECC_TEST bound to: OFF - type: string 
+	Parameter ADDR_WIDTH bound to: 27 - type: integer 
+	Parameter nCK_PER_CLK bound to: 4 - type: integer 
+	Parameter DATA_WIDTH bound to: 16 - type: integer 
+	Parameter PAYLOAD_WIDTH bound to: 16 - type: integer 
+	Parameter APP_DATA_WIDTH bound to: 128 - type: integer 
+	Parameter APP_MASK_WIDTH bound to: 16 - type: integer 
+	Parameter IDLE bound to: 3'b001 
+	Parameter WRITE bound to: 3'b010 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_write_control' (3#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_read_control' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_read_control.v:23]
+	Parameter IDLE bound to: 5'b00001 
+	Parameter READ bound to: 5'b00010 
+	Parameter WAIT bound to: 5'b00100 
+	Parameter ADDR_ACCUMULATE bound to: 5'b01000 
+	Parameter WAIT_FOR_CONFIG bound to: 5'b10000 
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_read_control' (4#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_read_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ddr2_ram' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/ddr2_ram_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_ram' (5#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/ddr2_ram_stub.v:5]
+WARNING: [Synth 8-3848] Net rdqs_n in module/entity ddr2_wr does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_wr.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'ddr2_wr' (6#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_wr.v:23]
+WARNING: [Synth 8-6014] Unused sequential element wake_count_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sealedDDR.v:88]
+INFO: [Synth 8-6155] done synthesizing module 'sealedDDR' (7#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sealedDDR.v:2]
+INFO: [Synth 8-6157] synthesizing module 'DataBus' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/DataBus.v:28]
+	Parameter BLOCK_SIZE bound to: 128 - type: integer 
+	Parameter DDR_BLOCK_IN_USE bound to: 16 - type: integer 
+	Parameter WAIT_IDEL_LOOP_AFTER_BOOTDONE bound to: 256 - type: integer 
+	Parameter DDR_TO_IMEM_FIRSTCELL_INSISTLOOP bound to: 256 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/DataBus.v:109]
+WARNING: [Synth 8-3848] Net sd_mem_data_toSDMEM in module/entity DataBus does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/DataBus.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'DataBus' (8#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/DataBus.v:28]
+INFO: [Synth 8-6157] synthesizing module 'SD' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/SD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'labkit' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:2]
+	Parameter STATE_INIT bound to: 0 - type: integer 
+	Parameter STATE_START bound to: 1 - type: integer 
+	Parameter STATE_WRITE bound to: 2 - type: integer 
+	Parameter STATE_READ bound to: 3 - type: integer 
+	Parameter STATE_START_READ bound to: 4 - type: integer 
+	Parameter STATE_WAIT bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:248]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (9#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:248]
+INFO: [Synth 8-6157] synthesizing module 'sd_controller' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sd_controller.v:3]
+	Parameter RST bound to: 0 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000001 
+	Parameter CMD0 bound to: 2 - type: integer 
+	Parameter CMD55 bound to: 3 - type: integer 
+	Parameter CMD41 bound to: 4 - type: integer 
+	Parameter POLL_CMD bound to: 5 - type: integer 
+	Parameter IDLE bound to: 6 - type: integer 
+	Parameter READ_BLOCK bound to: 7 - type: integer 
+	Parameter READ_BLOCK_WAIT bound to: 8 - type: integer 
+	Parameter READ_BLOCK_DATA bound to: 9 - type: integer 
+	Parameter READ_BLOCK_CRC bound to: 10 - type: integer 
+	Parameter SEND_CMD bound to: 11 - type: integer 
+	Parameter RECEIVE_BYTE_WAIT bound to: 12 - type: integer 
+	Parameter RECEIVE_BYTE bound to: 13 - type: integer 
+	Parameter WRITE_BLOCK_CMD bound to: 14 - type: integer 
+	Parameter WRITE_BLOCK_INIT bound to: 15 - type: integer 
+	Parameter WRITE_BLOCK_DATA bound to: 16 - type: integer 
+	Parameter WRITE_BLOCK_BYTE bound to: 17 - type: integer 
+	Parameter WRITE_BLOCK_WAIT bound to: 18 - type: integer 
+	Parameter WRITE_DATA_SIZE bound to: 515 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sd_controller.v:76]
+INFO: [Synth 8-6155] done synthesizing module 'sd_controller' (10#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sd_controller.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SDTrans' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/SDTrans_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'SDTrans' (11#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/SDTrans_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:175]
+WARNING: [Synth 8-6014] Unused sequential element next_byte_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:161]
+WARNING: [Synth 8-6014] Unused sequential element byte_cnt_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:164]
+WARNING: [Synth 8-6014] Unused sequential element only_one_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:166]
+WARNING: [Synth 8-6014] Unused sequential element flag_wr_adr_ready_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:169]
+WARNING: [Synth 8-6014] Unused sequential element flag_rd_adr_ready_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:170]
+WARNING: [Synth 8-5788] Register adr_reg in module labkit is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'labkit' (12#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/labkit.v:2]
+WARNING: [Synth 8-350] instance 'SD_PHY_Controller' of module 'labkit' requires 12 connections, but only 11 given [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/SD.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'SD' (13#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/SD.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CPU' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'pc_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/pc_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'pc_reg' (14#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/pc_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/if_id.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (15#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/if_id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:4]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:125]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:344]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:362]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'id' (16#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:4]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/id_ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (17#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/id_ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/regfile.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (18#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/regfile.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:19]
+INFO: [Synth 8-6157] synthesizing module 'Adder_32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'Adder_32' (19#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:71]
+INFO: [Synth 8-6157] synthesizing module 'Subber_32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:112]
+INFO: [Synth 8-6155] done synthesizing module 'Subber_32' (20#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:112]
+INFO: [Synth 8-6157] synthesizing module 'barrelshifter32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:153]
+INFO: [Synth 8-6155] done synthesizing module 'barrelshifter32' (21#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:153]
+INFO: [Synth 8-6157] synthesizing module 'BitCal_32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'BitCal_32' (22#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:198]
+INFO: [Synth 8-6157] synthesizing module 'Lui_32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:218]
+INFO: [Synth 8-6155] done synthesizing module 'Lui_32' (23#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:218]
+INFO: [Synth 8-6157] synthesizing module 'Slt_32' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:232]
+INFO: [Synth 8-6155] done synthesizing module 'Slt_32' (24#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:232]
+WARNING: [Synth 8-3848] Net answers[9] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:29]
+WARNING: [Synth 8-3848] Net zeros[9] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:30]
+WARNING: [Synth 8-3848] Net carrys[4] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net carrys[5] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net carrys[6] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net carrys[7] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net carrys[8] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net carrys[9] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:31]
+WARNING: [Synth 8-3848] Net negatives[9] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:32]
+WARNING: [Synth 8-3848] Net overflows[4] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[5] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[6] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[7] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[8] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[9] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[10] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[11] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[12] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[13] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+WARNING: [Synth 8-3848] Net overflows[14] in module/entity alu does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (25#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:19]
+INFO: [Synth 8-6157] synthesizing module 'MDU' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/MDU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'MULT' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mult.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MULT' (26#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mult.v:3]
+INFO: [Synth 8-6157] synthesizing module 'MULTU' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/multu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'MULTU' (27#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/multu.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DIV' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:1]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:18]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:18]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:20]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:18]
+WARNING: [Synth 8-5788] Register r_reg in module DIV is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'DIV' (28#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:1]
+INFO: [Synth 8-6157] synthesizing module 'DIVU' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:23]
+WARNING: [Synth 8-5788] Register reg_r_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:40]
+WARNING: [Synth 8-5788] Register r_sign_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:40]
+WARNING: [Synth 8-5788] Register reg_q_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:42]
+WARNING: [Synth 8-5788] Register reg_b_reg in module DIVU is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'DIVU' (29#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MDU' (30#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/MDU.v:24]
+WARNING: [Synth 8-3848] Net hilo_temp_o in module/entity ex does not have driver. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (31#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (32#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex_mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:3]
+INFO: [Synth 8-226] default block is never used [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:72]
+INFO: [Synth 8-226] default block is never used [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:103]
+INFO: [Synth 8-226] default block is never used [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'mem' (33#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem_wb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (34#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem_wb.v:3]
+INFO: [Synth 8-6157] synthesizing module 'hilo_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/hilo_reg.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hilo_reg' (35#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/hilo_reg.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (36#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (37#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/CPU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'data_ram' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/data_ram.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'data_ram' (38#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/data_ram.v:3]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/seg7x16.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/seg7x16.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (39#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/seg7x16.v:2]
+INFO: [Synth 8-6157] synthesizing module 'io_sel' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/loadboard/io_sel.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'io_sel' (40#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/loadboard/io_sel.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sw_mem_sel' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/loadboard/sw_mem_sel.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'sw_mem_sel' (41#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/loadboard/sw_mem_sel.v:2]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_for_cpu' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/clk_wiz_for_cpu_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_for_cpu' (42#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/.Xil/Vivado-7032-DESKTOP-HD/realtime/clk_wiz_for_cpu_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'SOPC' (43#1) [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/SOPC.v:24]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[31]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[30]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[29]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[28]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[27]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[26]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[25]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[24]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[23]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[22]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[21]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[20]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[19]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[18]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[17]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[16]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[15]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[14]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[13]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[12]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[1]
+WARNING: [Synth 8-3331] design data_ram has unconnected port addr[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port Databus_busy
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[3]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[2]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[1]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[5]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[1]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[0]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[31]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[30]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[29]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[28]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[27]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[26]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[25]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[24]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[23]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[22]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[21]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[20]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[19]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[18]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[17]
+WARNING: [Synth 8-3331] design Lui_32 has unconnected port iData_b[16]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[63]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[62]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[61]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[60]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[59]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[58]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[57]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[56]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[55]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[54]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[53]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[52]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[51]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[50]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[49]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[48]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[47]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[46]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[45]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[44]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[43]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[42]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[41]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[40]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[39]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[38]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[37]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[36]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[35]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[34]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[33]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[32]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[31]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[30]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[29]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[28]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[27]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[26]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[25]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[24]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[23]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[22]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[21]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[20]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[19]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[18]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[17]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[16]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[15]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[14]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[13]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[12]
+WARNING: [Synth 8-3331] design ex has unconnected port hilo_temp_o[11]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 484.918 ; gain = 164.281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 484.918 ; gain = 164.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 484.918 ; gain = 164.281
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/SDTrans/SDTrans/SDTrans_in_context.xdc] for cell 'SD_0/SD_PHY_Controller/SDMEM'
+Finished Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/SDTrans/SDTrans/SDTrans_in_context.xdc] for cell 'SD_0/SD_PHY_Controller/SDMEM'
+Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc] for cell 'sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram'
+Finished Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc] for cell 'sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram'
+Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'sealedDDR_0/clk_divider'
+Finished Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'sealedDDR_0/clk_divider'
+Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/cache/cache/cache_in_context.xdc] for cell 'cache0'
+Finished Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/cache/cache/cache_in_context.xdc] for cell 'cache0'
+Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu/clk_wiz_for_cpu_in_context.xdc] for cell 'clk_divider'
+WARNING: [Constraints 18-619] A clock with name 'clk100mhz' already exists, overwriting the previous clock with the same name. [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu/clk_wiz_for_cpu_in_context.xdc:1]
+Finished Parsing XDC File [d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu/clk_wiz_for_cpu_in_context.xdc] for cell 'clk_divider'
+Parsing XDC File [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/constrs_1/Mips54_LoadBoard.xdc]
+WARNING: [Vivado 12-507] No nets matched 'rst_IBUF'. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/constrs_1/Mips54_LoadBoard.xdc:112]
+CRITICAL WARNING: [Common 17-163] Missing value for option 'objects', please type 'set_property -help' for usage info. [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/constrs_1/Mips54_LoadBoard.xdc:112]
+Finished Parsing XDC File [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/constrs_1/Mips54_LoadBoard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/constrs_1/Mips54_LoadBoard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/SOPC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/SOPC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 867.324 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'cache0' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'SD_0/SD_PHY_Controller/SDMEM' at clock pin 'clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 867.324 ; gain = 546.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 867.324 ; gain = 546.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[10]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[11]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[12]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[3]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[4]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[5]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[6]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[7]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[8]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_addr[9]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ba[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cas_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ck_p[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cke[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_cs_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dm[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[10]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[11]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[12]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[13]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[14]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[15]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[2]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[3]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[4]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[5]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[6]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[7]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[8]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dq[9]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_n[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_dqs_p[1]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_odt[0]. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_ras_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for ddr2_we_n. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/ddr2_ram/ddr2_ram/ddr2_ram_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for clk100mhz. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu/clk_wiz_for_cpu_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk100mhz. (constraint file  d:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/ip/clk_wiz_for_cpu/clk_wiz_for_cpu/clk_wiz_for_cpu_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for SD_0/SD_PHY_Controller/SDMEM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for sealedDDR_0/clk_divider. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cache0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for clk_divider. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 867.324 ; gain = 546.688
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'app_wdf_end_reg' into 'app_en_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:64]
+INFO: [Synth 8-4471] merging register 'app_wdf_wren_reg' into 'app_en_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:65]
+WARNING: [Synth 8-6014] Unused sequential element app_wdf_end_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:64]
+WARNING: [Synth 8-6014] Unused sequential element app_wdf_wren_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:65]
+INFO: [Synth 8-5544] ROM "read_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'cstate_reg' in module 'ddr2_read_control'
+INFO: [Synth 8-5546] ROM "app_cmd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "cstate" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "cache_status_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "ddr_to_imem_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ddr_boot_block_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ddr_boot_inblock_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "loadData_ddrToImemDone" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "boot_counter" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "byte_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ready_for_next_byte" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bit_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'bytes_read_reg' in module 'labkit'
+INFO: [Synth 8-802] inferred FSM for state register 'test_state_reg' in module 'labkit'
+INFO: [Synth 8-5546] ROM "rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bytes" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_sdmem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sd_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rd" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "bytes" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "bytes_read" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "addr_sdmem" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sd_ready" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "test_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "adr" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "m_reg1_read_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "wreg_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "m_reg2_read_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "m_reg2_read_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "aluop_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "aluop_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alusel_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "alusel_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "wreg_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "branch_flag_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "preInstr_isLoad" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIV_m.v:18]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/DIVU.v:40]
+INFO: [Synth 8-5546] ROM "busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mul_div_control" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "whilo_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_a_toalu" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "clz_result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_ce_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "o_seg_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'cstate_reg' in module 'fsm158A042DCF00'
+WARNING: [Synth 8-327] inferring latch for variable 'app_cmd_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_wr.v:84]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                             0001 |                               00
+                 iSTATE1 |                             0010 |                               01
+                 iSTATE2 |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'bytes_read_reg' using encoding 'one-hot' in module 'labkit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_INIT |                               00 |                              000
+        STATE_START_READ |                               01 |                              100
+              STATE_READ |                               10 |                              011
+              STATE_WAIT |                               11 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'test_state_reg' using encoding 'sequential' in module 'labkit'
+WARNING: [Synth 8-327] inferring latch for variable 'reg1_o_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:554]
+WARNING: [Synth 8-327] inferring latch for variable 'reg2_o_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ControlUnit.v:576]
+WARNING: [Synth 8-327] inferring latch for variable 'oData_C_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:275]
+WARNING: [Synth 8-327] inferring latch for variable 'carry_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'overflow_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ALU.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'clz_result_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:229]
+WARNING: [Synth 8-327] inferring latch for variable 'cnt_o_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:126]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_a_toalu_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_b_toalu_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_opcode_toalu_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/ex.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'mem_data_o_reg' [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mem.v:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 867.324 ; gain = 546.688
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 2     
+	   3 Input     33 Bit       Adders := 8     
+	   2 Input     32 Bit       Adders := 20    
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               56 Bit    Registers := 1     
+	               32 Bit    Registers := 64    
+	               27 Bit    Registers := 2     
+	               24 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 8     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 48    
++---Multipliers : 
+	                32x32  Multipliers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 102   
+	   4 Input     32 Bit        Muxes := 12    
+	   5 Input     32 Bit        Muxes := 2     
+	  29 Input     32 Bit        Muxes := 2     
+	   6 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 7     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input     24 Bit        Muxes := 12    
+	   4 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 4     
+	   4 Input     23 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 4     
+	   3 Input      8 Bit        Muxes := 1     
+	  25 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  29 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	  33 Input      6 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 4     
+	  25 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 7     
+	   4 Input      4 Bit        Muxes := 3     
+	  25 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  25 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	  26 Input      3 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 24    
+	  20 Input      2 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 5     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 141   
+	   3 Input      1 Bit        Muxes := 15    
+	   4 Input      1 Bit        Muxes := 32    
+	  20 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+	  29 Input      1 Bit        Muxes := 4     
+	  25 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ddr2_write_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               27 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module ddr2_read_control 
+Detailed RTL Component Info : 
++---Registers : 
+	               27 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 5     
+Module ddr2_wr 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module sealedDDR 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+Module DataBus 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               24 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 12    
+	   4 Input     24 Bit        Muxes := 5     
+	   2 Input     23 Bit        Muxes := 4     
+	   4 Input     23 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 18    
+Module clock_divider 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sd_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               56 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  20 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	  20 Input      5 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	  20 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+Module labkit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 3     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 10    
+	   5 Input      1 Bit        Muxes := 1     
+Module SD 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module pc_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module id 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
++---Muxes : 
+	  29 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 11    
+	   6 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   5 Input     32 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  25 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  29 Input      7 Bit        Muxes := 1     
+	  25 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  29 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	  25 Input      3 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 3     
+	  29 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 32    
+Module Adder_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Subber_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module barrelshifter32 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 15    
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module BitCal_32 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module Lui_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Slt_32 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module MULT 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module MULTU 
+Detailed RTL Component Info : 
++---Multipliers : 
+	                32x32  Multipliers := 1     
+Module DIV 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 5     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module DIVU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module MDU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   6 Input     32 Bit        Muxes := 1     
+	  33 Input      6 Bit        Muxes := 1     
+	  25 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  26 Input      3 Bit        Muxes := 1     
+	  25 Input      2 Bit        Muxes := 2     
+	  25 Input      1 Bit        Muxes := 3     
+Module ex_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module mem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   9 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 6     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   9 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 2     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module hilo_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module data_ram 
+Detailed RTL Component Info : 
++---RAMs : 
+	               8K Bit         RAMs := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module sw_mem_sel 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "sbbu_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sbbu_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sra_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sll_slr_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "srl_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "and_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "or_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "xor_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nor_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slt/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sltu/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/ACK_O_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:68]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/read_en_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:67]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_write_ctr_imp/app_addr_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_write_control.v:63]
+WARNING: [Synth 8-6014] Unused sequential element ddr2_wr_ins/ddr2_weight_load_ins/app_addr_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/ddr2_read_control.v:58]
+INFO: [Synth 8-5544] ROM "cache_status_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cache_status_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "ddr_to_imem_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "loadData_ddrToImemDone" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ddr_boot_inblock_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "ddr_boot_block_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element SD_PHY_Controller/sdcont/ready_for_next_byte_reg was removed.  [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/ThreeLevelMem/sd_controller.v:83]
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/bit_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/byte_counter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/return_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "SD_PHY_Controller/sdcont/boot_counter" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "SD_PHY_Controller/sdcont/state" won't be mapped to RAM because address size (27) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "SD_PHY_Controller/sdcont/ready_for_next_byte" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "lui_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sbbu_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sbbu_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "and_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "or_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "xor_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "nor_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sltu/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "slt/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sra_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "srl_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "sll_slr_block/oData_Z0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.srcs/sources_1/new/PipelineCpu/mult.v:9]
+DSP Report: Generating DSP multiplier/z, operation Mode is: A*B.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: Generating DSP multiplier/z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: Generating DSP multiplier/z, operation Mode is: A*B.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: Generating DSP multiplier/z, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+DSP Report: operator multiplier/z is absorbed into DSP multiplier/z.
+INFO: [Synth 8-5546] ROM "whilo_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clz_result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "alu_a_toalu" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "id0/aluop_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "id0/aluop_o" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\SD_0/SD_PHY_Controller/sdcont/cmd_out_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/flag_srd_adr_ready_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/sector_cnt_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/sector_cnt_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/sector_cnt_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/sector_cnt_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/sector_cnt_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/write_bytes_next_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[5] )
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[29]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[31]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[30]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[30]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[28]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[28]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[26]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[27]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[20]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[21]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[22]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[23]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[24]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[25]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[11]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[12]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[13]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[10]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[9]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[17]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[18]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[19]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[19]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[16]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[16]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_firstcell_count_reg[14]' (FDCE) to 'databus_0/ddr_to_imem_firstcell_count_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/ddr_to_imem_firstcell_count_reg[15] )
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[6]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[7]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[8]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[9]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[10]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[11]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[12]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[13]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[14]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[15]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[16]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[17]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[18]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[19]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[20]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[21]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[22]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[23]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[24]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[25]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[26]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[27]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[28]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[29]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3886] merging instance 'sccpu/ex0/clz_result_reg[30]' (LD) to 'sccpu/ex0/clz_result_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (sccpu/ex0/\clz_result_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/wr_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/cstate_reg[2] )
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[3]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[4]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[4]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[0] )
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[1]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[1]' (FDE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2] )
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[30]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[23]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[22]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[21]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[20]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[19]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[18]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[17]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[16]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[15]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[14]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[13]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[12]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[11]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[10]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[9]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[8]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[24]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[25]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[26]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[27]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[28]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_to_imem_count_reg[29]' (FDCE) to 'databus_0/ddr_to_imem_count_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/ddr_to_imem_count_reg[31] )
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[30]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[31]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[31]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[29]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[29]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[28]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[28]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[27]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[26]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[26]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[25]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[25]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[24]'
+INFO: [Synth 8-3886] merging instance 'databus_0/ddr_boot_inblock_count_reg[24]' (FDCE) to 'databus_0/ddr_boot_inblock_count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'databus_0/cache_status_reg[3][2]' (FDE) to 'databus_0/cache_status_reg[3][3]'
+INFO: [Synth 8-3886] merging instance 'databus_0/cache_status_reg[2][2]' (FDE) to 'databus_0/cache_status_reg[2][3]'
+INFO: [Synth 8-3886] merging instance 'databus_0/cache_status_reg[1][2]' (FDE) to 'databus_0/cache_status_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'databus_0/cache_status_reg[0][2]' (FDE) to 'databus_0/cache_status_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\SD_0/SD_PHY_Controller/din_reg[7] )
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[32]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[33]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[33]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[34]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[34]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[35]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[35]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[36]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[36]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[37]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[37]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[38]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[38]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[39]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[39]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[40]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[40]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[41]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[41]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[42]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[42]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[43]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[43]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[44]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[44]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[45]'
+INFO: [Synth 8-3886] merging instance 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[45]' (FDRE) to 'sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[46]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[127] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/ddr_boot_inblock_count_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/bootdonoe_idle_count_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/cache_status_reg[3][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/cache_status_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/cache_status_reg[1][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/cache_status_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\databus_0/cur_state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\seg7/o_seg_r_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sealedDDR_0/ddr2_wr_ins/app_cmd_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/cstate_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/app_cmd_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/cstate_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_cmd_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_write_ctr_imp/app_wdf_data_reg[127]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (sealedDDR_0/ddr2_wr_ins/ddr2_weight_load_ins/app_cmd_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/ddr_to_imem_count_reg[31]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/ddr_to_imem_firstcell_count_reg[15]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/cur_state_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/cache_status_reg[0][22]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/cache_status_reg[1][22]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/cache_status_reg[2][22]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/cache_status_reg[3][22]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/ddr_boot_inblock_count_reg[23]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/bootdonoe_idle_count_reg[15]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (databus_0/sd_mem_read_write_reg) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[7]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[6]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[5]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[4]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[3]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[1]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/din_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/flag_srd_adr_ready_reg) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[7]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[6]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[5]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[4]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[3]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[1]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/adr_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sdcont/cmd_out_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/write_bytes_next_reg) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sd_write_nxt_first_reg) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sector_cnt_reg[4]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sector_cnt_reg[3]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sector_cnt_reg[2]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sector_cnt_reg[1]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/sector_cnt_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/wr_reg) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[31]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[30]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[29]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[28]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[27]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[26]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[25]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[24]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[23]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[22]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[21]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[20]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[19]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[18]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[17]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[16]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[15]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[14]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[13]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (SD_0/SD_PHY_Controller/addr_sdmem_reg[0]) is unused and will be removed from module SOPC.
+WARNING: [Synth 8-3332] Sequential element (i_ALU/slt/oData_C_reg) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (i_ALU/sltu/oData_C_reg) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (i_ALU/carry_reg) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (i_ALU/overflow_reg) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (clz_result_reg[31]) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (cnt_o_reg[1]) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (cnt_o_reg[0]) is unused and will be removed from module ex.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_is_in_delayslot_reg) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/is_in_delayslot_o_reg) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[31]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[30]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[29]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[28]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[27]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[26]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[25]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[24]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[23]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[22]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[21]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[20]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[19]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[18]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[17]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (id_ex0/ex_inst_reg[16]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[63]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[62]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[61]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[60]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[59]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[58]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[57]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[56]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[55]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[54]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[53]) is unused and will be removed from module CPU.
+WARNING: [Synth 8-3332] Sequential element (ex_mem0/hilo_o_reg[52]) is unused and will be removed from module CPU.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 867.324 ; gain = 546.688
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives       | 
++------------+------------------------------+-----------+----------------------+------------------+
+|SOPC        | data_ram0/m_data_block_0_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_1_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_2_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_3_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
++------------+------------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|MDU         | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MDU         | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MDU         | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|MDU         | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/ui_clk' to pin 'sealedDDR_0/ddr2_wr_ins/weight_ddr2_ram/bbstub_ui_clk/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'sealedDDR_0/clk_divider/clk_out1' to pin 'sealedDDR_0/clk_divider/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk100mhz'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_divider/clk_out1' to pin 'clk_divider/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:21 . Memory (MB): peak = 878.488 ; gain = 557.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:27 . Memory (MB): peak = 940.543 ; gain = 619.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+------------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives       | 
++------------+------------------------------+-----------+----------------------+------------------+
+|SOPC        | data_ram0/m_data_block_0_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_1_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_2_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
+|SOPC        | data_ram0/m_data_block_3_reg | Implied   | 1 K x 8              | RAM256X1S x 32   | 
++------------+------------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\sccpu/regfile1/regs_reg[0][7] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:24 ; elapsed = 00:01:32 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:26 ; elapsed = 00:01:34 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                      | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|SOPC        | SD_0/SD_PHY_Controller/sdcont/cmd_out_reg[55] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-----------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |cache           |         1|
+|2     |clk_wiz_for_cpu |         1|
+|3     |SDTrans         |         1|
+|4     |clk_wiz_0       |         1|
+|5     |ddr2_ram        |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |SDTrans         |     1|
+|2     |cache           |     1|
+|3     |clk_wiz_0       |     1|
+|4     |clk_wiz_for_cpu |     1|
+|5     |ddr2_ram        |     1|
+|6     |BUFG            |     4|
+|7     |CARRY4          |   304|
+|8     |DSP48E1_1       |     4|
+|9     |LUT1            |   244|
+|10    |LUT2            |   739|
+|11    |LUT3            |   494|
+|12    |LUT4            |   282|
+|13    |LUT5            |   537|
+|14    |LUT6            |  1508|
+|15    |MUXF7           |   268|
+|16    |MUXF8           |    32|
+|17    |RAM256X1S       |   128|
+|18    |SRL16E          |     1|
+|19    |FDCE            |   401|
+|20    |FDPE            |    27|
+|21    |FDRE            |  1922|
+|22    |FDSE            |    54|
+|23    |LD              |    75|
+|24    |LDC             |    96|
+|25    |IBUF            |    18|
+|26    |OBUF            |    25|
+|27    |OBUFT           |    13|
++------+----------------+------+
+
+Report Instance Areas: 
++------+---------------------------+-------------------+------+
+|      |Instance                   |Module             |Cells |
++------+---------------------------+-------------------+------+
+|1     |top                        |                   |  7406|
+|2     |  SD_0                     |SD                 |   557|
+|3     |    SD_PHY_Controller      |labkit             |   555|
+|4     |      div1                 |clock_divider      |     2|
+|5     |      div2                 |clock_divider_0    |     2|
+|6     |      sdcont               |sd_controller      |   364|
+|7     |  data_ram0                |data_ram           |   185|
+|8     |  databus_0                |DataBus            |   244|
+|9     |  sccpu                    |CPU                |  5457|
+|10    |    ex0                    |ex                 |  1504|
+|11    |      I_MDU                |MDU                |   745|
+|12    |        DIV                |DIV                |   413|
+|13    |        DIVU               |DIVU               |   269|
+|14    |        multiplier         |MULT               |    63|
+|15    |      i_ALU                |alu                |    67|
+|16    |        sbbu_block         |Subber_32          |    16|
+|17    |        slt                |Slt_32             |    51|
+|18    |    ex_mem0                |ex_mem             |   416|
+|19    |    hilo_reg0              |hilo_reg           |    64|
+|20    |    id0                    |id                 |   177|
+|21    |    id_ex0                 |id_ex              |   702|
+|22    |    if_id0                 |if_id              |   447|
+|23    |    mem0                   |mem                |    32|
+|24    |    mem_wb0                |mem_wb             |   230|
+|25    |    pc_reg0                |pc_reg             |    45|
+|26    |    regfile1               |regfile            |  1840|
+|27    |  sealedDDR_0              |sealedDDR          |   782|
+|28    |    ddr2_wr_ins            |ddr2_wr            |   389|
+|29    |      ddr2_weight_load_ins |ddr2_read_control  |     7|
+|30    |      ddr2_write_ctr_imp   |ddr2_write_control |    45|
+|31    |  seg7                     |seg7x16            |    88|
++------+---------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 491 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:22 . Memory (MB): peak = 984.301 ; gain = 281.258
+Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:35 . Memory (MB): peak = 984.301 ; gain = 663.664
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 925 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 32 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 299 instances were transformed.
+  LD => LDCE: 75 instances
+  LDC => LDCE: 64 instances
+  LDC => LDCE (inverted pins: G): 32 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+440 Infos, 267 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:40 . Memory (MB): peak = 984.301 ; gain = 663.664
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/SOPC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SOPC_utilization_synth.rpt -pb SOPC_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.146 . Memory (MB): peak = 984.301 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 25 20:06:57 2018...

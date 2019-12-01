@@ -49,7 +49,7 @@
 
 ### 1.4. 实验环境
 
-<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654"  width="300" />
+<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654"  width="500" />
 
  **硬件环境：**
 
@@ -59,7 +59,7 @@
 
  板上的100 MHz的时钟接入此系统，并通过分频器给每个部件合适的频率。
 
-<img src="README.assets/image-20191201211103540.png" alt="image-20191201211103540" width="1100" />
+<img src="README.assets/image-20191201211103540.png" alt="image-20191201211103540" width="700" />
 
  **软件环境：**
 

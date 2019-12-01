@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Dec 25 20:04:59 2018
+# Process ID: 7032
+# Current directory: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1
+# Command line: vivado.exe -log SOPC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SOPC.tcl
+# Log file: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1/SOPC.vds
+# Journal file: D:/WeCloudSync/6.MI_PROJECTS/IncredibleVivado/Pipeline_with_ThreeLevelMem/Pipeline_with_ThreeLevelMem.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SOPC.tcl -notrace
