@@ -28,13 +28,17 @@
 
 感谢我的坚实好友`林mx（Tongji CS 2016）`提供了本项目的`SD卡读写模块`，感谢`Tongji CS 2015`的`陈z`、`黄yx`、`刘tc`等大佬的答疑解惑，感谢`香哥`的`真香警告`给了我完成的动力。
 
-### 1.2. 实验描述
+### 1.2. 声明
 
-本实验是同济大学计算机系《计算机系统结构》专业课的课程设计。
+本项目是原创作品，于2018年12月完成，本实验报告被迅速原封不动收录进该课程教材《计算机系统结构实验指导》一书。虽然书没有提到我，我也只是为学弟学妹做一点微小的贡献，但是既然有不止一个网友私信询问情况（说的像是我模仿了教材），特此说明一下我这个是原版。
+
+### 1.3. 实验描述
+
+本实验是同济大学计算机系《计算机系统结构》专业课的课程设计，16级计科学生作品，成功申优免考。
 
  目前，大多数计算机都采用的Cache（高速缓冲存储器）、主存储器和‘’磁盘存储器（辅存）构成的三级存储系统，这个存储系统可以看成是“Cache-主存”和“主存-辅存”层次组成的系统。
 
-![image-20191201210240722](README.assets/image-20191201210240722.png)
+![image-20191201210240722](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232310.png)
 
  这一设计是为了解决存储容量和速度的矛盾，大大提升计算机系统的性能。其具有如此神奇作用的原因则是程序的局部性原理——包括空间的局部性和时间的局部性。
 
@@ -51,15 +55,15 @@
 
  在本次提升实验之中，也遵循这样的设计原则。即“Cache-主存”这一层次对程序员来说是完全透明的，程序员直接给地址访问主存，Cache则默默无闻地工作，完全由硬件实现。
 
-### 1.3. 总体框架
+### 1.4. 总体框架
 
-<img src="README.assets/image-20191201210808698.png" width="300" alt="image-20191201210808698"/>
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232336.png" width="300" alt="image-20191201210808698"/>
 
  这是三级存储系统的总框图，是一个较为抽象的概念图，具体实现则需要结合硬件实验环境选取合适的部件。
 
-### 1.4. 实验环境
+### 1.5. 实验环境
 
-<img src="README.assets/image-20191201210829654.png" alt="image-20191201210829654"  width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232423.png" alt="image-20191201210829654"  width="500" />
 
  **硬件环境：**
 
@@ -69,13 +73,13 @@
 
  板上的100 MHz的时钟接入此系统，并通过分频器给每个部件合适的频率。
 
-<img src="README.assets/image-20191201211103540.png" alt="image-20191201211103540" width="700" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232438.png" alt="image-20191201211103540" width="700" />
 
  **软件环境：**
 
  软件环境为windows10操作系统下的Vivado 2018.2。
 
-### 1.5. 实验具体要求
+### 1.6. 实验具体要求
 
  SD卡中存放流水线CPU的二进制流，以及用户程序，N4板上电自动完成如下的任务：
 
@@ -86,15 +90,15 @@
 
 ### 2.1. 系统设计总体模块图
 
-<img src="README.assets/image-20191201211400475.png" alt="image-20191201211400475"  width="560" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232448.png" alt="image-20191201211400475"  width="560" />
 
-<img src="README.assets/image-20191201211411324.png" alt="image-20191201211411324"  width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232452.png" alt="image-20191201211411324"  width="500" />
 
 ### 2.2. 三级存储子系统设计
 
 **(1) 地址的设计**
 
-![image-20191201211506558](README.assets/image-20191201211506558.png)
+![image-20191201211506558](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232459.png)
 
  我将主存地址地址划分为这三个部分。
 
@@ -104,13 +108,13 @@
 
  其余的高位则作为标识位。 Cache工作的基本原理如图所示。
 
-<img src="README.assets/image-20191201211521722.png" alt="image-20191201211521722"  width="300" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232502.png" alt="image-20191201211521722"  width="300" />
 
 (2) Cache映射与替换
 
  在本次提升实验中，我选取了直接映像的方式。主存的块大小和Cache块设为一样，都是128个字的大小。映射的规则可以用下面的示意图形象的表示出来。
 
-![image-20191201211631412](README.assets/image-20191201211631412.png)
+![image-20191201211631412](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232509.png)
 
  主存中的每一个块只能被放置到Cache中唯一的一个位置，从主存块到Cache块的对应关系是依次循环分配的。
 
@@ -118,11 +122,11 @@
 
  这样我们可以很方便地通过主存块地址的低2位去选择直接映像Cache中的块。为了实现判断是否命中，我在DataBus中设置了一个标识寄存器。
 
-![image-20191201211803589](README.assets/image-20191201211803589.png)
+![image-20191201211803589](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232513.png)
 
  CPU做访存操作的流程大致如下。
 
-![image-20191201211812863](README.assets/image-20191201211812863.png)
+![image-20191201211812863](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232518.png)
 
  如果发现标识寄存器中对应的单元，其最高位为0或者最高位虽然为1但是标识与访存地址的标识不符，则要启动替换（加载过程），将主存SDRAM中的数据块调入Cache中，同时修改标识寄存器，继续刚才的访存操作就会命中取得数据。
 
@@ -136,7 +140,7 @@
 
  在运行的过程中，如果发现Cache中数据块有数据但不是对应标识的，也会启动调块过程，将Cache块中的数据替换掉。
 
- ![image-20191201211855188](README.assets/image-20191201211855188.png)
+ ![image-20191201211855188](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232523.png)
 
 ## 3. 具体模块实现方法
 
@@ -146,7 +150,7 @@
 
  MIG能够封装DDR的物理层信号，用户不需要对物理信号有所了解，只需要关注应用信号。MIG需要按照资料中指导的操作生成。但是由于DDR相较于cpu属于慢速的设备，所以要协调工作的话还要靠下面的MIG控制器。IP核生成后，需要将DDR的物理接口添加到顶层模块，但无需再在XDC文件中配置端口，因为生成过程中已经配置好了。
 
-![image-20191201211941638](README.assets/image-20191201211941638.png)
+![image-20191201211941638](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232527.png)
 
  其中，需要连接到最顶层的物理接口如下：
 
@@ -182,17 +186,17 @@ app_wdf_rdy:高电平代表接口处于准备状态，可以写入数据
 app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_wdf_rdy均有效的时候，数据才会被写入到DDR中。
 ```
 
-![image-20191201212047155](README.assets/image-20191201212047155.png)
+![image-20191201212047155](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232534.png)
 
  MIG需要再次封装，根据官方手册中读写时序的要求，给出相应的控制信号。
 
  **写操作的时序：**
 
-<img src="README.assets/image-20191201212110356.png" alt="image-20191201212110356" width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232539.png" alt="image-20191201212110356" width="500" />
 
  **读操作的时序：**
 
-<img src="README.assets/image-20191201212120262.png" alt="image-20191201212120262"  width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232544.png" alt="image-20191201212120262"  width="500" />
 
  **非工作状态：**
 
@@ -204,13 +208,13 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 封装好的DDR模块可以连接到数据总线DataBus上去，sealedDDr的模块图如下所示：
 
-<img src="README.assets/image-20191201212152400.png" alt="image-20191201212152400" style="zoom:80%;" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232549.png" alt="image-20191201212152400" style="zoom:80%;" />
 
 ### 3.2. Cache模块
 
  Cache块是通过一个Distributed Memory实现的。容量为512个字，和前面对Cache的设计保持一致，4个块每个块128个字，4×128=512。
 
-<img src="README.assets/image-20191201212219606.png" alt="image-20191201212219606" width="550" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232553.png" alt="image-20191201212219606" width="550" />
 
  Cache是可读可写的，所以这里设置Memory Type为Single Port RAM。
 
@@ -218,9 +222,9 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  SD卡为移动设备提供了安全的，大容量存储解决方法。它本身可以通过两种总线模式进行数据传输，一种是称为SD BUS的4位串行数据模式，另一种就是本次实验采用的4线SPI Bus模式。
 
-<img src="README.assets/image-20191201212250206.png" alt="image-20191201212250206" width="400"  />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232558.png" alt="image-20191201212250206" width="400"  />
 
-<img src="README.assets/image-20191201212946275.png" alt="image-20191201212946275" width="600" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232601.png" alt="image-20191201212946275" width="600" />
 
 -  **初始化操作**
 
@@ -248,7 +252,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  SD模块给出工作状态信号sd_mem_ready，只有有效后才能进入BOOTING状态。
 
-<img src="README.assets/image-20191201213035146.png" alt="image-20191201213035146" style="zoom:80%;" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232606.png" alt="image-20191201213035146" style="zoom:80%;" />
 
  SD卡的数据，每当系统初始或者reset的时候，就会重新读入SD缓存中，为搬入DDR做准备。
 
@@ -258,7 +262,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  DataBus的模块图如下：
 
-<img src="README.assets/image-20191201213127499.png" alt="image-20191201213127499" style="zoom:80%;" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232610.png" alt="image-20191201213127499" style="zoom:80%;" />
 
  它的连线连接了CPU、SD、DDR和Cache.
 
@@ -275,7 +279,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  五级流水线CPU是平时实验完成的内容，这里不再多介绍。
 
-<img src="README.assets/image-20191201213950615.png" alt="image-20191201213950615" style="zoom:80%;" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232614.png" alt="image-20191201213950615" style="zoom:80%;" />
 
  此处对CPU稍做的改造是，向CPU传入DataBus的工作状态，并把工作状态信号传入CPU的暂停控制模块中，将给CPU一个新的暂停的理由，以达到三级存储子系统和CPU协调工作的目的。当DataBus忙的时候，stall信号全1，将CPU所有部件暂停；等待done信号到来继续工作。
 
@@ -283,11 +287,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 ### 4.1. 从U盘下板
 
-<img src="README.assets/image-20191201214041691.png" alt="image-20191201214041691" width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232619.png" alt="image-20191201214041691" width="500" />
 
  使用移动电源供电。比特流在u盘中，应用程序在SD卡中。
 
-<img src="README.assets/image-20191201214053039.png" alt="image-20191201214053039" width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232624.png" alt="image-20191201214053039" width="500" />
 
  黄色的BUSY灯常亮，说明正在下板。
 
@@ -297,11 +301,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  LED[2]表示存储子系统正忙，可能是正在启动，也可能时因为发生Cache块的装入、替换。除了最开始启动，其他时间一般忙的时间非常短暂，LED[2]只会闪一下。
 
-<img src="README.assets/image-20191201214103842.png" alt="image-20191201214103842" width="400" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232630.png" alt="image-20191201214103842" width="400" />
 
  上图只有LED[2]亮，这是系统刚通电，存储子系统未就绪。
 
-<img src="README.assets/image-20191201214111646.png" alt="image-20191201214111646" width="400"/>
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232634.png" alt="image-20191201214111646" width="400"/>
 
  上图LED[0]、LED[1]亮，表示系统就绪并且从存储子系统中读出了数据。
 
@@ -313,7 +317,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 软件，从SD卡0地址开始写入应用程序。
 
-![image-20191201214313897](README.assets/image-20191201214313897.png)
+![image-20191201214313897](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232639.png)
 
  上面写的时系统结构静态流水线CPU的测试程序。
 
@@ -321,19 +325,19 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  **C[12]**
 
-![image-20191201214346891](README.assets/image-20191201214346891.png)
+![image-20191201214346891](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232644.png)
 
  **C[24]**
 
-![image-20191201214355616](README.assets/image-20191201214355616.png)
+![image-20191201214355616](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232648.png)
 
  **D[18]**
 
-![image-20191201214405003](README.assets/image-20191201214405003.png)
+![image-20191201214405003](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232652.png)
 
  **D[26]**
 
-![image-20191201214414986](README.assets/image-20191201214414986.png)
+![image-20191201214414986](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232655.png)
 
  下板拨动开关遍历数组，逐一和 Mars 的结果对比，结果一致，说明流水线工作正常。
 
@@ -343,11 +347,11 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  这里我换上的是《计算机组成原理》课程用于验证CPU功能的测试程序。
 
-![image-20191201214443632](README.assets/image-20191201214443632.png)
+![image-20191201214443632](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232700.png)
 
  下板结果：
 
-<img src="README.assets/image-20191201214455511.png" alt="image-20191201214455511" width="500" />
+<img src="https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232704.png" alt="image-20191201214455511" width="500" />
 
  下板结果为1~F依次从右边流出，循环往复，符和预期结果，中途替换SD卡成功。
 
@@ -363,7 +367,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
  整个Vivado项目中，模块的层次如下图所示。
 
-![image-20191201214719530](README.assets/image-20191201214719530.png)
+![image-20191201214719530](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232709.png)
 
  由于文件过多，这里不在报告中贴出。详细代码请见附件。下面给出源程序文件的说明。
 
@@ -371,7 +375,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 -  **第一类：三级存储子系统模块**
 
-![image-20191201214740328](README.assets/image-20191201214740328.png)
+![image-20191201214740328](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232714.png)
 
 | 文件名              | 说明             |
 | ------------------- | ---------------- |
@@ -386,7 +390,7 @@ app_wdf_wren:高电平有效，写入允许信号。只有当app_wdf_wren和app_
 
 -  **第二类：动态流水线****CPU****模块**
 
-![image-20191201214756576](README.assets/image-20191201214756576.png)
+![image-20191201214756576](https://miimage.oss-cn-hangzhou.aliyuncs.com/img/20200712232718.png)
 
 | 文件名        | 说明                |
 | ------------- | ------------------- |
